@@ -1,0 +1,82 @@
+extends layouts/page
+include mixins/mixins
+block variables
+    - var title= 'Главная'
+    - var mainPage= true
+    - var innerPage= false
+    - var activNavItem= ''
+block pageContent
+    main.main(role='main')
+        h1.visually-hidden Барбершоп Бородинский
+        section.features.container
+            h2.visually-hidden Преимущества Барбершопа
+            ul.features__list
+                li.features__item
+                    h3.features__title.subtitle.subtitle--light БЫСТРО
+                    p.features__description МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!
+                li.features__item
+                    h3.features__title.subtitle.subtitle--light КРУТО
+                    p.features__description ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+                li.features__item
+                    h3.features__title.subtitle.subtitle--light ДОРОГО
+                    p.features__description НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?
+        .page-block.container
+            section.news
+                h2.news__title.subtitle Новости
+                ul.news__list
+                    li.news__item
+                        p.news__content НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+                        time.news__date(time='2018-01-11')
+                            span.news__day 11
+                            | января
+                    li.news__item
+                        p.news__content В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ
+                        time.news__date(time='2018-01-18')
+                            span.news__day 18
+                            | января
+                a.news__link.button(href='#') Все новости
+            section.gallery
+                h2.gallery__title.subtitle Фотогалерея
+                .gallery__slider
+                    +img({src: 'img/galleryPhoto-1.jpg', alt: 'Внутренне помещение', retina: ['2x', '3x'], path: 'img/', name: 'galleryPhoto-1'})
+                    +img({src: 'img/galleryPhoto-1.jpg', alt: 'Внутренне помещение', retina: ['2x', '3x'], path: 'img/', name: 'galleryPhoto-1'})
+                    +img({src: 'img/galleryPhoto-1.jpg', alt: 'Внутренне помещение', retina: ['2x', '3x'], path: 'img/', name: 'galleryPhoto-1'})
+        .page-block.container
+            section.contacts
+                h2.contacts__title.subtitle Контактная информация
+                p.contacts__address
+                    | БАРБЕРШОП «БОРОДИНСКИЙ»
+                    br
+                    | АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+                    br
+                    | ТЕЛЕФОН: +7 (495) 666-02-66
+                p.contacts__time-work
+                    | ВРЕМЯ РАБОТЫ:
+                    br
+                    | ПН—ПТ: С 10:00 ДО 22:00
+                    br
+                    | СБ—ВС: С 10:00 ДО 19:00
+                a.contacts__link.button(href= "#") Как проехать
+                a.contacts__link.button(href= "#") Обратная связь
+            section.make-up
+                h2.make-up__title.subtitle Записаться
+                p.make-up__description УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+                form.make-up__form(action='#', method='post')
+                    label.make-up__label
+                        span.make-up__label-text Дата
+                        input.make-up__field.field(type='text', name='date', placeholder='08.10.2017')
+                    label.make-up__label
+                        span.make-up__label-text Время
+                        input.make-up__field.field(type='text', name='time', placeholder='10:00')
+                    label.make-up__label
+                        span.make-up__label-text Ваше имя
+                        input.make-up__field.field(type='text', name='name', placeholder='Борода')
+                    label.make-up__label
+                        span.make-up__label-text Телефон
+                        input.make-up__field.field(type='phone', name='phone', placeholder='+7 123 456 7890')
+                    button.make-up__submit.button(type='submit') Отправить
+
+
+
+
+

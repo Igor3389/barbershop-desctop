@@ -1,0 +1,18 @@
+.field {
+  padding: 7px 15px;
+  font: inherit;
+
+  background-color: #f9f6f3;
+  border: 2px solid $black;
+
+  &::placeholder {
+    font-weight: 700;
+    color: $black;
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}

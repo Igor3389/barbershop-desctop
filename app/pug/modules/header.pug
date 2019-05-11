@@ -1,0 +1,34 @@
+header.header(role='header')
+    block navigation
+        if mainPage
+            nav.navigation
+                a.logo(aria-label='Логотип Барбершоп')
+                    +icon('logo__icon', 'logo', 370, 153, {role: 'img'})
+                .navigation__wrapper
+                    .navigation__list-wrapper.container
+                        +navList('menu-list', 'item', 'link', activNavItem, [
+                            {title: 'ИНФОРМАЦИЯ'},
+                            {title: 'НОВОСТИ'},
+                            {title: 'ПРАЙС-ЛИСТ', link: 'price'},
+                            {title: 'МАГАЗИН', link: 'shop'},
+                            {title: 'КОНТАКТЫ'}])
+                        ul.user-list
+                            li.user-list__item
+                                a.user-list__link(href='#')
+                                    +icon('user-list__icon', 'login', 16, 16, {role: 'img'})
+                                    | Вход
+        else if innerPage
+            nav.navigation.container
+                a.logo(href='index.html', aria-label='Логотип Барбершоп')
+                    +icon('logo__icon', 'logo-inner', 111, 24, {role: 'img'})
+                +navList('menu-list', 'item', 'link', activNavItem, [
+                    {title: 'ИНФОРМАЦИЯ'},
+                    {title: 'НОВОСТИ', link: 'news'},
+                    {title: 'ПРАЙС-ЛИСТ', link: 'price'},
+                    {title: 'МАГАЗИН', link: 'shop'},
+                    {title: 'КОНТАКТЫ'}])
+                ul.user-list
+                    li.user-list__item
+                        a.user-list__link(href='#')
+                            +icon('user-list__icon', 'login', 16, 16, {role: 'img'})
+                            | Вход

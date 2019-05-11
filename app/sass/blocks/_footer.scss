@@ -1,0 +1,47 @@
+.footer {
+  margin-top: 66px;
+  padding-top: 43px;
+  padding-bottom: 40px;
+
+  background-color: $footer-background;
+  background-image: url("../img/backgroundFooterPatern.jpg");
+  background-repeat: repeat;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__search-link {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__contacts {
+    margin-right: 117px;
+  }
+
+  &__social {
+    margin-right: auto;
+  }
+
+  &__copyright-text {
+     display: block;
+
+     margin-bottom: 15px;
+
+     text-align: center;
+   }
+
+  &__copyright-button {
+    padding: 10px 5px;
+    width: 140px;
+
+    &:hover, &:focus {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}

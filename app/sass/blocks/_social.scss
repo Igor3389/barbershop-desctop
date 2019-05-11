@@ -1,0 +1,38 @@
+.social {
+  padding-top: 15px;
+
+  &__slogan {
+    display: block;
+    margin-bottom: 14px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 7px;
+  }
+
+  &__link {
+    display: flex;
+    width: 43px;
+    height: 43px;
+
+    background-color: $black;
+
+    &:hover, &:focus {
+      background-color: $white;
+
+      & .social__icon {
+        fill: black;
+      }
+    }
+  }
+
+  &__icon {
+    margin: auto;
+    fill: $white;
+  }
+}

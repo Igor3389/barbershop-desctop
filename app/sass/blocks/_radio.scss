@@ -1,0 +1,60 @@
+.radio {
+  position: relative;
+  user-select: none;
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &__text {
+    display: block;
+    padding-left: 44px;
+    line-height: 20px;
+  }
+
+  &__indicator {
+    position: absolute;
+    top: 1px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+
+    &::before {
+      display: none;
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+
+      width: 8px;
+      height: 8px;
+
+      background-color: $black;
+      border-radius: 50%;
+    }
+  }
+
+  &__field {
+    display: none;
+  }
+
+  &__field:checked + .radio__indicator::before {
+    display: block;
+  }
+
+  &__field:disabled + .radio__indicator::before {
+    background-color: $disabled-color;
+  }
+
+  &__field:disabled + .radio__indicator {
+    border-color: $disabled-color;
+  }
+
+  &__field:disabled + .radio__indicator + .radio__text {
+    color: $disabled-color;
+  }
+}

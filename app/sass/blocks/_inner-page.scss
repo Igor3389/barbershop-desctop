@@ -1,0 +1,73 @@
+.inner-page .header {
+  background-color: $black;
+}
+
+.inner-page .navigation {
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
+.inner-page .navigation.container {
+  padding-left: 20px;
+}
+
+.inner-page .logo {
+  margin-right: 20px;
+}
+
+.inner-page .menu-list {
+  margin-right: auto;
+}
+
+.inner-page .main {
+  padding-top: 50px;
+
+  color: $black;
+  background-color: $page-block-background;
+  background-image: url("../img/backgroundBlockPatern.jpg");
+  background-repeat: repeat;
+}
+
+.inner-page .footer {
+  margin-top: 0;
+
+  box-shadow: inset 0 30px 50px -10px $black;
+}
+
+.inner-page {
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__nav-list {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__nav-item {
+    position: relative;
+    margin-right: 41px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 7px;
+      right: -25px;
+
+      width: 8px;
+      height: 8px;
+      background-color: $black;
+
+      transform: rotate(45deg);
+    }
+
+    &--active {
+      color: $disabled-color;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+}

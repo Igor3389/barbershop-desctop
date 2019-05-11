@@ -1,0 +1,64 @@
+@import "normalize";
+@import "variables";
+@import "libs/slick";
+@import "mixins";
+@import "fonts";
+@import "hidden";
+@import "settings";
+@import "blocks/field";
+@import "blocks/chekcbox";
+@import "blocks/radio";
+@import "blocks/subtitle";
+@import "blocks/title";
+@import "blocks/container";
+@import "blocks/shop";
+@import "blocks/modal";
+@import "blocks/button";
+@import "blocks/navigation";
+@import "blocks/logo";
+@import "blocks/menu-list";
+@import "blocks/user-list";
+@import "blocks/inner-page";
+@import "blocks/item-page";
+@import "blocks/price-page";
+@import "blocks/features";
+@import "blocks/page-block";
+@import "blocks/news";
+@import "blocks/options";
+@import "blocks/gallery";
+@import "blocks/contacts";
+@import "blocks/make-up";
+@import "blocks/social";
+@import "blocks/makes";
+@import "blocks/groups";
+@import "blocks/products";
+@import "blocks/table";
+@import "blocks/product";
+@import "blocks/product-item";
+@import "blocks/description";
+@import "blocks/footer";
+@import "blocks/map";
+@import "blocks/login";
+
+body {
+  @include default;
+  min-width: 320px;
+
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+
+  background-color: $black;
+  background-image: url("../img/backgroundMain.jpg");
+  background-position: top 40px center;
+  background-repeat: no-repeat;
+  color: $white;
+}
+
+
+
+
+

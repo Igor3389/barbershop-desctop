@@ -1,0 +1,18 @@
+.table {
+  border-collapse: collapse;
+
+  &__col {
+    padding: 7px 17px 8px;
+    width: 229px;
+    font-size: 14px;
+    border: 2px solid $black;
+    
+    &--left {
+      text-align: left;
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+}

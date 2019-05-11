@@ -1,0 +1,49 @@
+extends layouts/page
+include mixins/mixins
+block variables
+    - var title= 'Магазин'
+    - var mainPage= false
+    - var innerPage= true
+    - var activNavItem= 'ПРАЙС-ЛИСТ'
+block pageContent
+    main.main.inner-page.price-page(role='main')
+        .container
+            h1.inner-page__title.subtitle ПРАЙС-ЛИСТ
+            ul.inner-page__nav-list
+                li.inner-page__nav-item
+                    a.inner-page__nav-link(href='#') Главная
+                li.inner-page__nav-item.inner-page__nav-item--active
+                    a.inner-page__nav-link ПРАЙС-ЛИСТ
+            b.price-page__slogan ИСТИННО МУЖСКАЯ КЛАССИКА
+            .price-page__wrapper
+                section.price-page__features
+                    h2.price-page__features-title.subtitle--2
+                        | МЫ ИСПОЛЬЗУЕМ ТОЛЬКО
+                        br
+                        | ЛУЧШИЕ СРЕДСТВА:
+                    ul.price-page__features-list
+                        li.price-page__features-item Baxter of California
+                        li.price-page__features-item Mr Natty
+                        li.price-page__features-item Suavecito
+                        li.price-page__features-item Malin+Goetz
+                section.price-page__price
+                    h2.price-page__price-title.subtitle--2
+                        | ЦЕНЫ НА УСЛУГИ
+                        br
+                        | НАШИХ МАСТЕРОВ:
+                    table.price-page__price-table.table
+                        tr
+                            td.table__col.table-col--left СТРИЖКА
+                            td.table__col.table-col--center 1500 ₽
+                        tr
+                            td.table__col.table-col--left СТРИЖКА БОРОДЫ
+                            td.table__col.table-col--center 500 ₽
+                        tr
+                            td.table__col.table-col--left НАКРУТКА УСОВ
+                            td.table__col.table-col--center 350 ₽
+            section.price-page__about
+                h2.price-page__about-title.subtitle--2 НЕСКОЛЬКО СЛОВ О НАС:
+                .price-page__about-wrapper
+                    p.price-page__about-content Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+                    p.price-page__about-content Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+

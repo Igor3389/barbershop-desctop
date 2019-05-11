@@ -1,0 +1,29 @@
+.modal-map
+    section.map
+        h2.visually-hidden Месторасположение Барбершопа
+        +img({
+            class: 'map__image',
+            src: 'img/addressMap.jpg',
+            title: 'Месторасположение Барбершопа',
+            retina: ['2x', '3x'],
+            name: 'addressMap'
+        })
+.modal-login
+    section.login
+        h2.login__title.subtitle Личный кабинет
+        p.login__description Введите пожалуйста свой логин и пароль
+        form.login__form(action='#', method='post')
+            label.visually-hidden(for='login', aria-label='Укажите ваше имя или E-mail')
+            input.login__field.login__field--user.field(id='login', type='text', name='login', placeholder='Логин')
+            label.visually-hidden(for='password', aria-label='Укажите ваш пароль')
+            input.login__field.login__field--password.field(id='password', type='password', name='password', placeholder='Пароль')
+            .login__block
+                label.checkbox.checkbox--login
+                    input.checkbox__field(type='checkbox', name='remember', checked)
+                    span.checkbox__indicator
+                    span.checkbox__text Запомните меня
+                a.login__link(href='#') Я забыл пароль!
+            button.login__submit.button(type='submit') Войти
+.modal-overlay
+    .modal-popup
+        button.modal-popup__close(aria-label='Закрыть модальное окно')

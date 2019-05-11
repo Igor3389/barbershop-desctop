@@ -1,0 +1,173 @@
+extends layouts/page
+include mixins/mixins
+block variables
+    - var title= 'Магазин'
+    - var mainPage= false
+    - var innerPage= true
+    - var activNavItem= 'МАГАЗИН'
+block pageContent
+    main.main.shop(role='main')
+        .container
+            h1.inner-page__title.title СРЕДСТВА ДЛЯ УХОДА
+            ul.inner-page__nav-list
+                li.inner-page__nav-item
+                    a.inner-page__nav-link(href='#') Главная
+                li.inner-page__nav-item
+                    a.inner-page__nav-link(href='#') Магазин
+                li.inner-page__nav-item.inner-page__nav-item--active
+                    a.inner-page__nav-link Средства для ухода
+            .shop__wrapper
+                form.shop__form.options(action='#', method='post')
+                    fieldset.options__makes.makes
+                        legend.options__title.subtitle--2 Производители:
+                        ul.makes__list
+                            li.makes__item
+                                label.makes__label.checkbox
+                                    input.checkbox__field(type='checkbox', name='Baxter_of_California', checked)
+                                    span.checkbox__indicator
+                                    span.checkbox__text Baxter of California
+                            li.makes__item
+                                label.makes__label.checkbox
+                                    input.checkbox__field(type='checkbox', name='Mr_Natty')
+                                    span.checkbox__indicator
+                                    span.checkbox__text Mr Natty
+                            li.makes__item
+                                label.makes__label.checkbox
+                                    input.checkbox__field(type='checkbox', name='Suavecito', checked)
+                                    span.checkbox__indicator
+                                    span.checkbox__text Suavecito
+                            li.makes__item
+                                label.makes__label.checkbox
+                                    input.checkbox__field(type='checkbox', name='Malin_Goetz')
+                                    span.checkbox__indicator
+                                    span.checkbox__text Malin+Goetz
+                            li.makes__item
+                                label.makes__label.checkbox
+                                    input.checkbox__field(type='checkbox', name='Murray')
+                                    span.checkbox__indicator
+                                    span.checkbox__text Murray’s
+                            li.makes__item
+                                label.makes__label.checkbox
+                                    input.checkbox__field(type='checkbox', name='American_Crew', checked)
+                                    span.checkbox__indicator
+                                    span.checkbox__text American Crew
+                    fieldset.options__groups.groups
+                        legend.options__title.subtitle--2 Группы товаров:
+                        ul.groups__list
+                            li.groups__item
+                                label.groups__label.radio
+                                    input.radio__field(type='radio', name='group')
+                                    span.radio__indicator
+                                    span.radio__text Бритвенные  принадлежности
+                            li.groups__item
+                                label.groups__label.radio
+                                    input.radio__field(type='radio', name='group', checked)
+                                    span.radio__indicator
+                                    span.radio__text Средства для ухода
+                            li.groups__item
+                                label.groups__label.radio
+                                    input.radio__field(type='radio', name='group')
+                                    span.radio__indicator
+                                    span.radio__text Аксессуары
+                    button.options__submit.button(type='submit') Показать
+                section.products
+                    h2.visually-hidden товары барбершопа
+                    ul.products__list
+                        li.products__item.product
+                            a.product__link(href='item.html')
+                                h3.product__title
+                                    | Набор для путешествий
+                                    span.product__title-name «Baxter of California»
+                                +img({class: 'product__image', src: 'img/product-1.jpg', path: 'img/', alt: 'Набор для путешествий  «Baxter of California»', retina: ['2x', '3x'], name: 'product-1'})
+                            .product__price-block
+                                span.product__price 2 900 ₽
+                                a.product__cart.button купить
+                        li.products__item.product
+                            a.product__link(href='#')
+                                h3.product__title
+                                    | Увлажняющий кондиционер
+                                    span.product__title-name «Baxter of California»
+                                +img({
+                                    class: 'product__image',
+                                    src: 'img/product-2.jpg',
+                                    path: 'img/',
+                                    alt: 'Увлажняющий кондиционер  «Baxter of California»',
+                                    retina: ['2x', '3x'],
+                                    name: 'product-2'
+                                })
+                            .product__price-block
+                                span.product__price 750 ₽
+                                a.product__cart.button купить
+                        li.products__item.product
+                            a.product__link(href='#')
+                                h3.product__title
+                                    | Гель для волос
+                                    span.product__title-name «SUAVECITO»
+                                +img({
+                                    class: 'product__image',
+                                    src: 'img/product-3.jpg',
+                                    path: 'img/',
+                                    alt: 'Гель для волос «SUAVECITO»',
+                                    retina: ['2x', '3x'],
+                                    name: 'product-3'
+                                })
+                            .product__price-block
+                                span.product__price 290 ₽
+                                a.product__cart.button купить
+                        li.products__item.product
+                            a.product__link(href='#')
+                                h3.product__title
+                                    | Глина для укладки волос
+                                    span.product__title-name «American crew»
+                                +img({
+                                    class: 'product__image',
+                                    src: 'img/product-4.jpg',
+                                    path: 'img/',
+                                    alt: 'Глина для укладки волос  «American crew»',
+                                    retina: ['2x', '3x'],
+                                    name: 'product-4'
+                                })
+                            .product__price-block
+                                span.product__price 500 ₽
+                                a.product__cart.button купить
+                        li.products__item.product
+                            a.product__link(href='#')
+                                h3.product__title
+                                    | Гель для волос
+                                    span.product__title-name «AMERICAN CREW»
+                                +img({
+                                    class: 'product__image',
+                                    src: 'img/product-5.jpg',
+                                    path: 'img/',
+                                    alt: 'Гель для волос «AMERICAN CREW»',
+                                    retina: ['2x', '3x'],
+                                    name: 'product-5'
+                                })
+                            .product__price-block
+                                span.product__price 300 ₽
+                                a.product__cart.button купить
+                        li.products__item.product
+                            a.product__link(href='#')
+                                h3.product__title
+                                    | Набор для бритья
+                                    span.product__title-name «Baxter of California»
+                                +img({
+                                    class: 'product__image',
+                                    src: 'img/product-6.jpg',
+                                    path: 'img/',
+                                    alt: 'Набор для бритья «Baxter of California»',
+                                    retina: ['2x', '3x'],
+                                    name: 'product-6'
+                                })
+                            .product__price-block
+                                span.product__price 3 900 ₽
+                                a.product__cart.button купить
+                    ul.products__pages
+                        li.products__page
+                            a.products__page-link(href='#') 1
+                        li.products__page.products__page--active
+                            a.products__page-link 2
+                        li.products__page
+                            a.products__page-link(href='#') 3
+                        li.products__page
+                            a.products__page-link(href='#') 4

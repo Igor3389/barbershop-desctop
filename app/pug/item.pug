@@ -1,0 +1,47 @@
+extends layouts/page
+include mixins/mixins
+block variables
+    - var title= 'Магазин'
+    - var mainPage= false
+    - var innerPage= true
+    - var activNavItem= 'МАГАЗИН'
+block pageContent
+    main.main.inner-page.item-page(role='main')
+        .container
+            h1.inner-page__title.title Набор для путешествий «Baxter of California»
+            ul.inner-page__nav-list
+                li.inner-page__nav-item
+                    a.inner-page__nav-link(href='#') Главная
+                li.inner-page__nav-item
+                    a.inner-page__nav-link(href='#') Магазин
+                li.inner-page__nav-item
+                    a.inner-page__nav-link(href='#') Средства для ухода
+                li.inner-page__nav-item.inner-page__nav-item--active
+                    a.inner-page__nav-link Набор для путешествий «Baxter of California»
+            section.product-item
+                h2.visually-hidden Описание набора для путешествий «Baxter of California»
+                .product-item__gallery
+                    .product-item__large-photo
+                        +img({src:'img/item-photo-3-large.jpg', path: 'img/', name: 'item-photo-3-large', alt: 'Вид товара крупным планом', retina: ['2x', '3x']})
+                    .product-item__photo-list
+                        +img({src:'img/item-photo-1.jpg', path: 'img/', name: 'item-photo-1', alt: 'Вид товара', retina: ['2x', '3x']})
+                        +img({src:'img/item-photo-2.jpg', path: 'img/', name: 'item-photo-2', alt: 'Вид товара', retina: ['2x', '3x']})
+                        +img({src:'img/item-photo-3.jpg', path: 'img/', name: 'item-photo-3', alt: 'Вид товара', retina: ['2x', '3x']})
+                        +img({src:'img/item-photo-1.jpg', path: 'img/', name: 'item-photo-1', alt: 'Вид товара', retina: ['2x', '3x']})
+                        +img({src:'img/item-photo-1.jpg', path: 'img/', name: 'item-photo-1', alt: 'Вид товара', retina: ['2x', '3x']})
+                .product-item__description.description
+                    .description__top
+                        span.description__available Есть в наличии
+                        span.description__articul Артикул: dexter-ae
+                    p.description__features Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+                    .description__buy
+                        span.description__price 2 900 ₽
+                        a.description__buy-button.button(href='#') Купить
+                    .description__complect
+                        b.description__complect-title.subtitle--2 В набор входят:
+                        ul.description__complect-list
+                            li.description__complect-item Средство для умывания (50 мл)
+                            li.description__complect-item Увлажняющий крем (50 мл)
+                            li.description__complect-item Крем для бритья (50 мл)
+                            li.description__complect-item Крем после бритья, шампунь (50 мл)
+                            li.description__complect-item Удобная кожаная косметичка

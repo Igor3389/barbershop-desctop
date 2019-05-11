@@ -1,0 +1,68 @@
+.description {
+  padding-top: 18px;
+  &__top {
+    display: flex;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  &__available {
+    margin-right: auto;
+    width: 100px;
+  }
+
+  &__articul {
+    padding-right: 4px;
+    width: 155px;
+    text-align: right;
+    color: $active-submenu-item;
+  }
+
+  &__features {
+    @include default;
+    margin-bottom: 35px;
+  }
+
+  &__price {
+    display: block;
+    padding: 10px 5px;
+    width: 109px;
+    text-align: center;
+
+    background-color: $price-background;
+  }
+
+  &__buy-button {
+    padding: 10px 5px;
+    width: 78px;
+  }
+
+  &__buy {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  &__complect-title {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  &__complect-item {
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 2px;
+
+      width: 7px;
+      height: 7px;
+      background-color: $black;
+
+      transform: rotate(45deg);
+    }
+  }
+
+}

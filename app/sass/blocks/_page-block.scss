@@ -1,0 +1,25 @@
+.page-block {
+  position: relative;
+  display: flex;
+
+  padding: 46px 80px 51px;
+  margin-bottom: 36px;
+
+  color: $black;
+  background-color: $page-block-background;
+  background-image: url("../img/backgroundBlockPatern.jpg");
+  background-repeat: repeat;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 77px;
+    left: 50%;
+    margin-left: -5px;
+
+    width: 8px;
+    height: 278px;
+    background-image: url("../img/pageBlockShadow.png");
+    background-repeat: no-repeat;
+  }
+}

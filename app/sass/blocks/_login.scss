@@ -1,0 +1,67 @@
+.login {
+  top: 120px;
+  margin-left: -230px;
+  padding: 46px 80px 58px;
+
+  width: 460px;
+
+  color: $black;
+  background-color: $page-block-background;
+  background-image: url("../img/backgroundBlockPatern.jpg");
+  background-repeat: repeat;
+
+  box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.7);
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7px;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    padding-left: 1px;
+    margin-bottom: 15px;
+  }
+
+  &__description {
+    @include default;
+    padding-left: 1px;
+    margin-bottom: 10px;
+  }
+
+  &__field {
+    padding-right: 30px;
+    margin-bottom: 9px;
+    width: 100%;
+
+    background-repeat: no-repeat;
+
+    &--user {
+      background-image: url("../img/pngIcons/user.png");
+      background-position: right 13px top 13px;
+    }
+
+    &--password {
+      background-image: url("../img/pngIcons/lock.png");
+      background-position: right 15px top 13px;
+    }
+
+    &::placeholder {
+      opacity: 1;
+      text-transform: uppercase;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__submit {
+     width: 100%;
+  }
+}

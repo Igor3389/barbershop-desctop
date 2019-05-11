@@ -1,0 +1,33 @@
+.product-item {
+  display: flex;
+  margin-top: 54px;
+
+  &__gallery {
+    margin-right: auto;
+    width: 460px;
+  }
+
+  &__description {
+    width: 390px;
+  }
+
+  &__large-photo {
+    margin-bottom: 13px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    background-color: $white;
+  }
+
+  &__photo-list {
+    & img {
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    & .slick-slide {
+      margin: 0 10px;
+    }
+
+    & .slick-list {
+      margin: 0 -10px;
+    }
+  }
+}

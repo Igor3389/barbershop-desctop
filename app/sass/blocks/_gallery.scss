@@ -1,0 +1,14 @@
+.gallery {
+  width: 300px;
+
+  &__title {
+    margin-bottom: 22px;
+
+    letter-spacing: 1px;
+  }
+
+  &__slider img {
+    border: 7px solid $white;
+    box-sizing: border-box;
+  }
+}

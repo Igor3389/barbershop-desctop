@@ -1,0 +1,25 @@
+.news {
+  width: 360px;
+  margin-right: auto;
+
+  &__title {
+    margin-bottom: 19px;
+  }
+
+  &__list {
+    margin-bottom: 28px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    @include list-default;
+    margin-bottom: 1px;
+  }
+
+  &__date {
+    text-transform: none;
+  }
+}

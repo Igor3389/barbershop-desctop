@@ -1,0 +1,21 @@
+footer.footer(role='footer')
+    .container.footer__wrapper
+        .footer__contacts
+            p
+                | БАРБЕРШОП «БОРОДИНСКИЙ»
+                br
+                | АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+                br
+                a.footer__search-link(href="#") Как нас найти?
+                br
+                | ТЕЛЕФОН: +7 (495) 666-02-66
+        .footer__social.social
+            b.social__slogan Давайте дружить!
+            +socialList('social', 'item', 'link',[
+                {link: '#', title: 'Социальная сеть Вконтакте', id: 'vk', width: 27, height: 15},
+                {link: '#', title: 'Социальная сеть Фейсбук', id: 'facebook', width: 19, height: 22},
+                {link: '#', title: 'Социальная сеть Инстаграм', id: 'instagram', width: 20, height: 20}
+            ])
+        p.footer__copyright
+            span.footer__copyright-text Разработано
+            a.footer__copyright-button.button(href='#') HTML ACADEMY

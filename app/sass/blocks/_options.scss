@@ -1,0 +1,23 @@
+.options {
+  width: 175px;
+
+  &__makes {
+    @include default;
+    border: none;
+  }
+
+  &__groups {
+    @include default;
+    border: none;
+  }
+
+  &__title {
+    @include default;
+    margin-bottom: 28px;
+  }
+
+  &__submit {
+    padding: 10px 31px;
+    font-size: 13px;
+  }
+}

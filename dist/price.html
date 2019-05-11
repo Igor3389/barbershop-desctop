@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Магазин</title>
+  </head>
+  <body class="inner-page">
+    <header class="header" role="header">
+      <nav class="navigation container"><a class="logo" href="index.html" aria-label="Логотип Барбершоп">
+          <svg class="logo__icon" width="111" height="24" role="img">
+            <use xlink:href="img/svg/symbol/sprite.svg#logo-inner"></use>
+          </svg></a>
+        <ul class="menu-list">
+          <li class="menu-list__item"><a class="menu-list__link" href="#">ИНФОРМАЦИЯ</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="news.html">НОВОСТИ</a></li>
+          <li class="menu-list__item menu-list__item--active"><a class="menu-list__link">ПРАЙС-ЛИСТ</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="shop.html">МАГАЗИН</a></li>
+          <li class="menu-list__item"><a class="menu-list__link" href="#">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="user-list">
+          <li class="user-list__item"><a class="user-list__link" href="#">
+              <svg class="user-list__icon" width="16" height="16" role="img">
+                <use xlink:href="img/svg/symbol/sprite.svg#login"></use>
+              </svg>Вход</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main inner-page price-page" role="main">
+      <div class="container">
+        <h1 class="inner-page__title subtitle">ПРАЙС-ЛИСТ</h1>
+        <ul class="inner-page__nav-list">
+          <li class="inner-page__nav-item"><a class="inner-page__nav-link" href="#">Главная</a></li>
+          <li class="inner-page__nav-item inner-page__nav-item--active"><a class="inner-page__nav-link">ПРАЙС-ЛИСТ</a></li>
+        </ul><b class="price-page__slogan">ИСТИННО МУЖСКАЯ КЛАССИКА</b>
+        <div class="price-page__wrapper">
+          <section class="price-page__features">
+            <h2 class="price-page__features-title subtitle--2">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br>ЛУЧШИЕ СРЕДСТВА:</h2>
+            <ul class="price-page__features-list">
+              <li class="price-page__features-item">Baxter of California</li>
+              <li class="price-page__features-item">Mr Natty</li>
+              <li class="price-page__features-item">Suavecito</li>
+              <li class="price-page__features-item">Malin+Goetz</li>
+            </ul>
+          </section>
+          <section class="price-page__price">
+            <h2 class="price-page__price-title subtitle--2">ЦЕНЫ НА УСЛУГИ<br>НАШИХ МАСТЕРОВ:</h2>
+            <table class="price-page__price-table table">
+              <tr>
+                <td class="table__col table-col--left">СТРИЖКА</td>
+                <td class="table__col table-col--center">1500 ₽</td>
+              </tr>
+              <tr>
+                <td class="table__col table-col--left">СТРИЖКА БОРОДЫ</td>
+                <td class="table__col table-col--center">500 ₽</td>
+              </tr>
+              <tr>
+                <td class="table__col table-col--left">НАКРУТКА УСОВ</td>
+                <td class="table__col table-col--center">350 ₽</td>
+              </tr>
+            </table>
+          </section>
+        </div>
+        <section class="price-page__about">
+          <h2 class="price-page__about-title subtitle--2">НЕСКОЛЬКО СЛОВ О НАС:</h2>
+          <div class="price-page__about-wrapper">
+            <p class="price-page__about-content">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+            <p class="price-page__about-content">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer" role="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__contacts">
+          <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br><a class="footer__search-link" href="#">Как нас найти?</a><br>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+        </div>
+        <div class="footer__social social"><b class="social__slogan">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link" href="#" aria-label="Социальная сеть Вконтакте">
+                <svg class="social__icon" width="27" height="15" role="img">
+                  <use xlink:href="img/svg/symbol/sprite.svg#vk"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link" href="#" aria-label="Социальная сеть Фейсбук">
+                <svg class="social__icon" width="19" height="22" role="img">
+                  <use xlink:href="img/svg/symbol/sprite.svg#facebook"></use>
+                </svg></a></li>
+            <li class="social__item"><a class="social__link" href="#" aria-label="Социальная сеть Инстаграм">
+                <svg class="social__icon" width="20" height="20" role="img">
+                  <use xlink:href="img/svg/symbol/sprite.svg#instagram"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <p class="footer__copyright"><span class="footer__copyright-text">Разработано</span><a class="footer__copyright-button button" href="#">HTML ACADEMY</a></p>
+      </div>
+    </footer>
+    <div class="modal-map">
+      <section class="map">
+        <h2 class="visually-hidden">Месторасположение Барбершопа</h2>
+        <picture>
+          <source type="image/webp" srcset="undefinedaddressMap.webp 1x, undefinedaddressMap@2x.webp 2x, undefinedaddressMap@3x.webp 3x"/><img class="map__image" src="undefinedaddressMap.jpg" srcset="undefinedaddressMap@2x.jpg 2x, undefinedaddressMap@3x.jpg 3x" alt="addressMap"/>
+        </picture>
+      </section>
+    </div>
+    <div class="modal-login">
+      <section class="login">
+        <h2 class="login__title subtitle">Личный кабинет</h2>
+        <p class="login__description">Введите пожалуйста свой логин и пароль</p>
+        <form class="login__form" action="#" method="post">
+          <label class="visually-hidden" for="login" aria-label="Укажите ваше имя или E-mail"></label>
+          <input class="login__field login__field--user field" id="login" type="text" name="login" placeholder="Логин">
+          <label class="visually-hidden" for="password" aria-label="Укажите ваш пароль"></label>
+          <input class="login__field login__field--password field" id="password" type="password" name="password" placeholder="Пароль">
+          <div class="login__block">
+            <label class="checkbox checkbox--login">
+              <input class="checkbox__field" type="checkbox" name="remember" checked><span class="checkbox__indicator"></span><span class="checkbox__text">Запомните меня</span>
+            </label><a class="login__link" href="#">Я забыл пароль!</a>
+          </div>
+          <button class="login__submit button" type="submit">Войти</button>
+        </form>
+      </section>
+    </div>
+    <div class="modal-overlay">
+      <div class="modal-popup">
+        <button class="modal-popup__close" aria-label="Закрыть модальное окно"></button>
+      </div>
+    </div>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>

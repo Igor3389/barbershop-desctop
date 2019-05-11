@@ -1,0 +1,42 @@
+.make-up {
+  width: 300px;
+
+  &__title {
+    margin-bottom: 18px;
+
+    letter-spacing: 0.4px;
+  }
+
+  &__description {
+    @include default;
+    margin-bottom: 12px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__label {
+    margin-bottom: 10px;
+
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+  }
+
+  &__label-text {
+    display: block;
+    padding-left: 17px;
+    margin-bottom: 5px;
+  }
+
+  &__field {
+    width: 140px;
+  }
+
+  &__submit {
+    margin-top: 10px;
+    width: 100%;
+  }
+}

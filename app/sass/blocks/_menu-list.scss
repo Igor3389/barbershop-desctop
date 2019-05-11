@@ -1,0 +1,35 @@
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item--active {
+    position: relative;
+
+    .menu-list__link:hover,
+    .menu-list__link:focus,
+    .menu-list__link:active {
+      background-color: $black;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+
+      height: 4px;
+      background-color: $white;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 25px 20px 27px;
+
+    &:hover, &:focus, &:active {
+      background-color: $menu-hover;
+    }
+
+  }
+}
